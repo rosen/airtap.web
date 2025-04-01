@@ -9,14 +9,14 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #0a0a23;
-      color: #ffffff;
+      background-color: #f8fafc;
+      color: #1e293b;
       line-height: 1.6;
     }
     header {
       padding: 2rem;
       text-align: center;
-      background-color: #111133;
+      background-color: #e2e8f0;
     }
     header img {
       width: 60px;
@@ -28,7 +28,7 @@
     }
     header p {
       font-size: 1.1rem;
-      color: #94a3b8;
+      color: #475569;
     }
     section {
       padding: 4rem 2rem;
@@ -41,7 +41,7 @@
     }
     section p {
       font-size: 1.125rem;
-      color: #cbd5e1;
+      color: #334155;
       margin-bottom: 1.5rem;
     }
     .features {
@@ -51,19 +51,21 @@
       margin-top: 2rem;
     }
     .feature {
-      background-color: #1e1e3f;
+      background-color: #ffffff;
       padding: 2rem;
       border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     }
     .feature h3 {
       margin-bottom: 0.75rem;
       font-size: 1.25rem;
+      color: #0f172a;
     }
     footer {
       text-align: center;
       padding: 2rem;
-      color: #94a3b8;
-      background-color: #0a0a23;
+      color: #64748b;
+      background-color: #f1f5f9;
     }
     .cta {
       background-color: #2563eb;
@@ -79,54 +81,60 @@
     .cta:hover {
       background-color: #1d4ed8;
     }
-  </style>
-    <style>
+    form.email-signup input[type="email"] {
+      padding: 0.75rem;
+      width: 300px;
+      border-radius: 8px 0 0 8px;
+      border: 1px solid #cbd5e1;
+    }
+
+    /* Table / Branding Styles */
     table {
       border-collapse: collapse;
+      margin: 0 auto;
     }
     td {
       vertical-align: middle;
       border: none;
       padding: 10px;
     }
-    .logo {
-      width: 80px; /* adjust as needed */
+    .logo img {
+      width: 80px;
     }
     .text-container {
-      font-family: sans-serif;
+      padding-left: 15px;
+      text-align: left;
     }
     .name {
       font-size: 24px;
-      font-weight: bold;
+      font-weight: 800;
+      color: #0f172a;
     }
     .tagline {
       font-size: 14px;
-      color: gray;
+      color: #475569;
     }
   </style>
 </head>
 <body>
   <header>
-<table>
-  <tr>
-    <td class="logo">
-      <img src="logo.jpeg" alt="Logo" width="300">
-    </td>
-    <td class="text-container">
-      <div class="name"> Airtap.ai</div>
-      <div class="tagline">(you) think it. (we) airtap it.</div>
-    </td>
-  </tr>
-</table>
-    </header>
+    <table>
+      <tr>
+        <td class="logo">
+          <img src="logo.jpeg" alt="Logo" />
+        </td>
+        <td class="text-container">
+          <div class="name">Airtap.ai</div>
+          <div class="tagline">(you) think it. (we) airtap it.</div>
+        </td>
+      </tr>
+    </table>
+  </header>
 
   <section>
     <h2>What is an Airtap?</h2>
-    <p>An "airtap" is a virtual, intelligent tap—performed by an AI agent in the cloud—mimicking what a user would have done manually on their phone or app.
-      <br>
-      No manual interaction needed – the AI knows what needs to be done and taps for you. Apps don’t have to be opened locally – actions happen via cloud-side control. Could integrate across apps, workflows, and platforms. “AI puppeteering your apps.”
-
-</p>
+    <p>An "airtap" is a virtual, intelligent tap—performed by an AI agent in the cloud—mimicking what a user would have done manually on their phone or app.<br>
+    No manual interaction needed – the AI knows what needs to be done and taps for you. Apps don’t have to be opened locally – actions happen via cloud-side control. Could integrate across apps, workflows, and platforms. “AI puppeteering your apps.”</p>
   </section>
 
   <section>
@@ -155,7 +163,7 @@
     <h2>Get Early Access</h2>
     <p>We’re opening our private beta soon. Be one of the first to experience app control like never before.</p>
     <form class="email-signup">
-      <input type="email" placeholder="Enter your email" required style="padding:0.75rem;width:300px;border-radius:8px 0 0 8px;border:none;" />
+      <input type="email" placeholder="Enter your email" required />
       <button type="submit" class="cta">Join the Waitlist</button>
     </form>
   </section>
@@ -165,3 +173,4 @@
   </footer>
 </body>
 </html>
+
